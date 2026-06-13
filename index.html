@@ -119,16 +119,22 @@
              if (valor === "tomate") {
                resultado = `
                  <h2>Nombre: Tomate</h2>
-                 <p>Sirve para: Salsas, ensaladas, cocina.</p>
+                 <h2>Sirve para:</h2>
+                 <p>Salsas, ensaladas, cocina.</p>
                  <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/Sin%20t%C3%ADtulo%20-%2003%20de%20junio%20de%202026%20a%20las%2016.20.00.jpeg" width="312" height="284">
                `;
              } else if (valor === "penca de sabila" || valor === "sabila" || valor === "penca" || valor === "aloe vera") {
                 resultado = `
                   <h2>Nombre: Penca de sabila</h2>
-                  <p>Sirve para: Alimentación, medicina tradicional.</p>
+                  <h2>Sirve para:</h2>
+                  <p>Alimentación, medicina tradicional.</p>
                   <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/penca.png" width="312" height="284">
                 `;
-              
+             } else if (valor === "roman") {
+                resultado = `
+                  <h1>Roman no es una planta 😒</h1>
+                  <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/SAM_0565.JPG" width="412" height="384">
+                `;
 
 
 
@@ -137,7 +143,7 @@
 
              } else {
                 resultado = "<h1>No encontré información para esa planta.</h1>";
-           }
+             }
              document.getElementById("resultado").innerHTML = resultado;
            }
         </script>
