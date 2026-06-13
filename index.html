@@ -103,8 +103,45 @@
         <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/SAM_0013.JPG" alt="Logo flor 777" width="412" height="284">
         <h1>¡Busca planta!</h1>
 
-        <label for="planta">Busca tu planta o función de ella:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Ejemplo: Planta de tomate, Planta de lechuga, Planta de albahaca..."></textarea>
+        <label for="planta">Busca tu planta:</label><br>
+        <input type="text" id="planta" placeholder="Ejemplo: manzana, tomate...">
+        <button onclick="buscarPlanta()" style="background-color:rgb(255, 123, 0)">Buscar</button>
+
+         <div id="resultado"></div>
+
+        <script>
+           function buscarPlanta() {
+             // Normaliza el texto a minúsculas
+             const valor = document.getElementById("planta").value.trim().toLowerCase();
+             let resultado = "";
+
+
+             if (valor === "tomate") {
+               resultado = `
+                 <h2>Nombre: Tomate</h2>
+                 <p>Sirve para: Salsas, ensaladas, cocina.</p>
+                 <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/Sin%20t%C3%ADtulo%20-%2003%20de%20junio%20de%202026%20a%20las%2016.20.00.jpeg" width="312" height="284">
+               `;
+             } else if (valor === "penca de sabila" || valor === "sabila" || valor === "penca" || valor === "aloe vera") {
+                resultado = `
+                  <h2>Nombre: Penca de sabila</h2>
+                  <p>Sirve para: Alimentación, medicina tradicional.</p>
+                  <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/penca.png" width="312" height="284">
+                `;
+              
+
+
+
+
+
+
+             } else {
+                resultado = "<h1>No encontré información para esa planta.</h1>";
+           }
+             document.getElementById("resultado").innerHTML = resultado;
+           }
+        </script>
+
         <p>esta funcion aun esta en desarrollo asi que aun no sirve 👆</p>
         
         
