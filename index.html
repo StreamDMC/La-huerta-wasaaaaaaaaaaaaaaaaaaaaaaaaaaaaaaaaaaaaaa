@@ -1,17 +1,22 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <style>
+             * { box-sizing: border-box; }
+
              body {
                background-image: url('https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/380567.png');
                background-size: cover;
                background-position: center;
                background-attachment: fixed;
                color: rgb(0, 0, 0);
-               text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-               margin: 20px;
+               margin: 0 auto;
+               padding: 16px;
+               max-width: 980px;
                font-family: Arial, sans-serif;
                text-align: center;
+               line-height: 1.5;
               }
       
       button {
@@ -26,6 +31,18 @@
       .rounded-circle { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; overflow: hidden; }
       /* Icono inline al tamaño de la letra */
       .inline-icon { width: 1em; height: 1em; display: inline-block; vertical-align: text-bottom; object-fit: contain; margin-left: 0.25em; }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin: 0 auto 1rem;
+      }
+
+      .gallery img {
+        margin: 0;
+      }
 
       .info-card {
         display: inline-flex;
@@ -61,6 +78,73 @@
 
       .info-card a { color: #1a73e8; text-decoration: none; }
       .info-card a:hover { text-decoration: underline; }      
+        
+        
+        #controls {
+        text-align: center;
+        margin-top: 10px;
+      }
+      
+      
+         #controls button {
+         width: 60px;
+         height: 60px;
+         font-size: 24px;
+         margin: 5px;
+         border-radius: 10px;
+         background-color: #007bff;
+         color: white;
+         border: none;
+       }
+         #controls button:active {
+           background-color: #0056b3;
+          }
+
+        @media (max-width: 700px) {
+          body {
+            padding: 12px;
+            background-attachment: scroll;
+          }
+
+          h1 {
+            font-size: clamp(1.6rem, 6vw, 2.1rem);
+          }
+
+          h2 {
+            font-size: clamp(1.25rem, 5vw, 1.7rem);
+          }
+
+          h3 {
+            font-size: clamp(1.05rem, 4.2vw, 1.3rem);
+          }
+
+          p {
+            font-size: 1rem;
+            line-height: 1.5;
+          }
+
+          .gallery {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+          }
+
+          .gallery img {
+            width: min(412px, calc(100vw - 32px));
+          }
+
+          .info-card {
+            flex-direction: column;
+            padding: 1rem;
+          }
+
+          input {
+            width: min(100%, 420px);
+          }
+        }
+        
+        
+        
         </style>
     </head>
     <body>
@@ -75,9 +159,9 @@
         <p> </p>
         <h2>Aqui podemos apreciar mas del trabajo de nuestros Estudiantes Galanistas 👇</h2>
         <p> </p>
-        <p><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/WhatsApp%20Image%202026-06-03%20at%204.07.14%20PM.jpeg" alt="Logo" width="412" height="284"> <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/WhatsApp%20Image%202026-06-03%20at%204.02.11%20PM.jpeg" alt="Logo" width="412" height="284"></p>
+        <p class="gallery"><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/SAM_0010.JPG" alt="metiendo el compostaje" width="412" height="284"> <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/SAM_0008.JPG" alt="mesclando el compostaje" width="412" height="284"></p>
         <p> </p>
-        <p><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/WhatsApp%20Image%202026-06-04%20at%204.01.07%20PM.jpeg" alt="Logo" width="412" height="284"></p>
+        <p class="gallery"><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/SAM_0005.JPG" alt="mesclando el compostaje" width="412" height="284"></p>
         <p> </p>
         <h2>¿Porque entrar o practicar la Huerta en casa?</h2>
         <p>1. Promueve la alimentación saludable</p>
@@ -88,8 +172,7 @@
         <p> </p>
         <h2>Aqui una de nuestras mas recientes actividades gracias al municipio 👇</h2>
         <p> </p>
-        <p><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/WhatsApp%20Image%202026-06-04%20at%203.53.46%20PM.jpeg" alt="Logo" width="412" height="284"> <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/WhatsApp%20Image%202026-06-04%20at%203.58.58%20PM.jpeg" alt="Logo" width="412" height="284"></p>
-        <p><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/WhatsApp%20Image%202026-06-04%20at%201.36.35%20PM.jpeg" alt="Logo" width="412" height="284"></p>
+        <p class="gallery"><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/Sin%20t%C3%ADtulo%20-%2010%20de%20julio%20de%202026%20a%20las%2019.37.42.jpeg" alt="estudiosos" width="412" height="284"> <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/Sin%20t%C3%ADtulo%20-%2010%20de%20julio%20de%202026%20a%20las%2019.38.34%20(1).jpeg" alt="Logo" width="412" height="284"></p>
         <p> </p>
         <h2>-horario:</h2>
         <p>Todos los días, al salir del colegio</p>
@@ -98,8 +181,8 @@
  
         <h2>Aqui tambien tenemos unas de las plantas mas destacadas de la huerta 👇</h2>
         <p> </p>
-        <p><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/WhatsApp%20Image%202026-06-03%20at%204.15.06%20PM.jpeg" alt="Logo" width="412" height="284"> <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/Sin%20t%C3%ADtulo%20-%2003%20de%20junio%20de%202026%20a%20las%2016.20.00.jpeg" alt="Logo" width="412" height="284"></p>
-        <p><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/Sin%20t%C3%ADtulo%20-%2005%20de%20junio%20de%202026%20a%20las%2013.59.45.png" alt="Logo" width="412" height="284"> <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/penca.png" alt="Logo" width="412" height="284"></p>
+        <p class="gallery"><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/WhatsApp%20Image%202026-06-03%20at%204.15.06%20PM.jpeg" alt="Logo" width="412" height="284"> <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/Sin%20t%C3%ADtulo%20-%2003%20de%20junio%20de%202026%20a%20las%2016.20.00.jpeg" alt="Logo" width="412" height="284"></p>
+        <p class="gallery"><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/Sin%20t%C3%ADtulo%20-%2005%20de%20junio%20de%202026%20a%20las%2013.59.45.png" alt="Logo" width="412" height="284"> <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/para%20la%20huerta%20en%204K%20diosmio/penca.png" alt="Logo" width="412" height="284"></p>
         <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/SAM_0013.JPG" alt="Logo flor 777" width="412" height="284">
         <h1>¡Busca planta!</h1>
 
@@ -143,21 +226,15 @@
                   <h2>Sirve para:</h2>
                   <p>Decoración, jardinería.</p>
                   <h2>Descripción:</h2>
-                  <p>El Dietes bicolor es una planta ornamental conocida por sus flores blancas con manchas amarillas y moradas.</p>
-                  <p>Es apreciada en jardines y paisajismo por su resistencia y facilidad de cuidado.</p>
+                  <p>El Dietes bicolor es una planta ornamental conocida por sus flores blancas con manchas amarillas y moradas. Es apreciada en jardines y paisajismo por su resistencia y facilidad de cuidado.</p>
                   <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/SAM_0071.JPG" width="312" height="284">
                 `;
 
-
-
-
-
-                 
              } else {
                 resultado = "<h1>No encontré información para esa planta.</h1>";
              }
              document.getElementById("resultado").innerHTML = resultado;
-           }
+            }
         </script>
 
         <p>esta funcion aun esta en desarrollo asi que algunas plantas no estan disponibles 👆</p>
@@ -173,7 +250,7 @@
         <p>-Evitar las peleas y conflictos con los demas.</p>
         <h2>Aqui nuevos y proximos nacimientos en nuestra Huerta 👇</h2>
         <p> </p>
-        <p><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/SAM_0515.JPG" alt="Logo" width="412" height="284"> <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/Sin%20t%C3%ADtulo%20-%2005%20de%20junio%20de%202026%20a%20las%2020.58.03.jpeg" alt="Logo" width="412" height="284"></p>
+        <p class="gallery"><img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/SAM_0515.JPG" alt="Logo" width="412" height="284"> <img src="https://raw.githubusercontent.com/StreamDMC/La-huerta-wasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/main/Sin%20t%C3%ADtulo%20-%2005%20de%20junio%20de%202026%20a%20las%2020.58.03.jpeg" alt="Logo" width="412" height="284"></p>
         <h2>-Y...¿Para que nos sirven las plantas?</h2>
         <p>-Proporcionan oxígeno, alimento</p>
         <p>-Ayudan a mantener el equilibrio del ecosistema</p>
@@ -182,7 +259,9 @@
         <p>-Evitan las erosiones y la desertificación</p>
         <p> </p>
 
-        <h1>Proxima mente un mini juego (inspirado en mario bros) 👇</h1>
+
+
+
 
         <h3>Gracias por ver, esto es todo por ahora 👍</h3>
         <p> </p>
