@@ -84,15 +84,34 @@
              }
 
              @media (max-width: 900px) {
+               body {
+                 display: block;
+               }
                .sidebar {
                  position: relative;
                  width: 100%;
                  height: auto;
                  border-right: none;
                  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                 padding-bottom: 16px;
+               }
+               .sidebar .logo {
+                 text-align: center;
+               }
+               .menu-items {
+                 display: flex;
+                 flex-wrap: wrap;
+                 justify-content: center;
+                 gap: 8px;
+               }
+               .menu-item {
+                 flex: 1 1 calc(50% - 10px);
+                 justify-content: center;
+                 margin-bottom: 8px;
                }
                .main-content {
                  margin-left: 0;
+                 padding-top: 20px;
                }
              }
       
@@ -386,3 +405,5 @@
         </script>
       </body>
 </html>
+
+
